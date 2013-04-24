@@ -1,14 +1,18 @@
 {
-  "name": "app-name",
+  "name": "lootninja",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
     "locomotive": "0.3.x",
     "express": "3.x.x",
     "connect-powered-by": "0.1.x",
-    "ejs": "0.8.x",
+    "ejs": "0.8.3",
     "passport": "0.1.16",
     "passport-local": "0.1.6",
-    "bcrypt": "0.7.5"
+    "bcrypt": "0.7.5",
+    "mongoose": "~3.1.2",
+    "locomotive-mongoose": "~0.1.0",
+    "requireindex": "0.1.8",
+    "connect-flash": "0.1.0"
   }
 }

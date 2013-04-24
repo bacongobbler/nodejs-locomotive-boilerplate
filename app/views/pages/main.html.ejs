@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome aboard! Visit <a href="http://locomotivejs.org/">locomotivejs.org</a> for details.</p>
-  </body>
-</html>
+<h1>Hello World</h1>
+<% if (user) { %>
+<p>Hello, <%= user.username %>!</p>
+<% } %>
+<ul>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/logout">Logout</a></li>
+    <li><a href="/signup">Register</a></li>
+</ul>

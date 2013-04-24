@@ -1,5 +1,7 @@
 var express = require('express')
   , poweredBy = require('connect-powered-by')
+  , flash = require('connect-flash')
+  , passport = require('../passport')
   , util = require('util');
 
 module.exports = function() {
@@ -24,6 +26,9 @@ module.exports = function() {
   // that can cuase confusion.  If this occurs, you can map an explicit
   // extension to a format.
   /* this.format('html', { extension: '.jade' }) */
+  
+  // Register the Mongoose adapter for our datastore
+  this.datastore(require('locomotive-mongoose'));
 
   // Register formats for content negotiation.  Using content negotiation,
   // different formats can be served as needed by different clients.  For
@@ -37,8 +42,13 @@ module.exports = function() {
   this.use(poweredBy('Locomotive'));
   this.use(express.logger());
   this.use(express.favicon());
-  this.use(express.static(__dirname + '/../../public'));
+  this.use(express.cookieParser());
   this.use(express.bodyParser());
   this.use(express.methodOverride());
+  this.use(express.session({ secret: 'space cat' }));
+  this.use(flash());
+  this.use(passport.initialize());
+  this.use(passport.session());
   this.use(this.router);
+  this.use(express.static(__dirname + '/../../public'));
 }
