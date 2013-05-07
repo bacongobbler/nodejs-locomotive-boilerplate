@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+    <style>
+      /* No content under the fixed bootstrap header. */
+      body {
+        padding-top: 60px;
+      }
+    </style>
+    <link href="css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/project.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/landing-page.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+    <title>{+title/}</title>
+  </head>
+  
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <img class="pull-left image" src="img/bolt.png">
+        <ul class="nav pull-left">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Tour</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+        <ul class="nav pull-right">
+          <li>
+            <a href="#">Register</a>
+          </li>
+          <li>
+            {?user}
+              <a href="/logout">Logout</a>
+            {:else}
+              <a href="/login">Sign in</a>
+            {/user}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid container-fluid-1">
+      <div class="container">
+        <div class="row-fluid">
+          <span class="span12">
+            <h1 class="heading">Welcome to Loot Ninja</h1>
+            <p>Loot, Pillage, Plunder, Profit!</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="messages" class="container">
+      {#flash.error}
+      <div class="alert alert-error">{.}</div>
+      {/flash.error}
+      {#flash.success}
+      <div class="alert alert-success">{.}</div>
+      {/flash.success}
+      {#flash.info}
+      <div class="alert alert-info">{.}</div>
+      {/flash.info}
+    </div>
+    <div class="container container-1">
+      {+content/}
+    </div>
+    <div class="container-fluid container-fluid-2">
+      <div class="container">
+        <div class="row-fluid">
+          <span class="span12">
+            <div class="pull-left">
+              <p>©Matthew Fisher 2013 (bacongobbler.com)</p>
+            </div>
+            <ul class="nav nav-pills pull-right">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                <a href="#">Terms Of Service</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

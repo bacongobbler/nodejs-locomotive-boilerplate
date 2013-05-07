@@ -14,10 +14,10 @@ module.exports = function() {
   // Configure application settings.  Consult the Express API Reference for a
   // list of the available [settings](http://expressjs.com/api.html#app-settings).
   this.set('views', __dirname + '/../../app/views');
-  this.set('view engine', 'ejs');
+  this.set('view engine', 'dust');
 
-  // Register EJS as a template engine.
-  this.engine('ejs', require('ejs').__express);
+  // Register Dust as a template engine for html.
+  this.engine('dust', require('consolidate').dust);
 
   // Override default template extension.  By default, Locomotive finds
   // templates using the `name.format.engine` convention, for example
