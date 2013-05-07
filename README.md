@@ -14,3 +14,5 @@ To deploy this boilerplate, clone this repository and run
 
 This will install all dependencies, and start the server. A small note, you may need to install dependencies for [bcrypt](https://github.com/TooTallNate/node.bcrypt.js) and
 [node-gyp](https://github.com/TooTallNate/node-gyp). Also, please make sure that mongoDB is running in the background.
+
+I'll be adding tests to this project eventually, so that the TravisCI image actually means something. ;)
