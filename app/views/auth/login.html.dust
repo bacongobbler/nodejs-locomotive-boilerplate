@@ -4,9 +4,9 @@
   <h1>Login</h1>
   <form method="POST">
     <div class="control-group">
-      <label class="control-label" for="input-email">Email</label>
+      <label class="control-label" for="input-username">Username</label>
       <div class="controls">
-        <input type="text" id="input-email" name="email" placeholder="Email">
+        <input type="text" id="input-username" name="username" placeholder="Username">
       </div>
     </div>
     <div class="control-group">
