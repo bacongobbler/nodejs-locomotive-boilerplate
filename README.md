@@ -1,7 +1,7 @@
 Locomotive HTML Boilerplate
 ===========================
 
-[![Build Status](https://travis-ci.org/bacongobbler/lootninja.png?branch=master)](https://travis-ci.org/bacongobbler/lootninja)
+[![Build Status](https://travis-ci.org/bacongobbler/nodejs-locomotive-boilerplate.png?branch=master)](https://travis-ci.org/bacongobbler/nodejs-locomotive-boilerplate)
 
 A Node.js MVC boilerplate using Locomotive as the framework, Passport-local for user authentication, mongoose for the DB connection adapter, and Linkedin's Dustjs as the templating engine.
 
