@@ -29,18 +29,15 @@
         <img class="pull-left image" src="img/bolt.png">
         <ul class="nav pull-left">
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">Tour</a>
-          </li>
-          <li>
-            <a href="#">About</a>
+            <a href="/about">About</a>
           </li>
         </ul>
         <ul class="nav pull-right">
           <li>
-            <a href="#">Register</a>
+            <a href="/signup">Register</a>
           </li>
           <li>
             {?user}
@@ -56,8 +53,8 @@
       <div class="container">
         <div class="row-fluid">
           <span class="span12">
-            <h1 class="heading">Welcome to Loot Ninja</h1>
-            <p>Loot, Pillage, Plunder, Profit!</p>
+            <h1 class="heading">Hello, World!</h1>
+            <p>What is this, a website for ants?</p>
           </span>
         </div>
       </div>
@@ -85,7 +82,7 @@
             </div>
             <ul class="nav nav-pills pull-right">
               <li>
-                <a href="#">About</a>
+                <a href="/about">About</a>
               </li>
               <li>
                 <a href="#">Privacy</a>
@@ -99,5 +96,4 @@
       </div>
     </div>
   </body>
-
 </html>
