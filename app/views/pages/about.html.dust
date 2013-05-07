@@ -1,0 +1,6 @@
+{>"app/views/base.html.dust"/}
+{<title}{title}{/title}
+{<content}
+    <h1>{title}</h1>
+    <p>This is an about page.</p>
+{/content}

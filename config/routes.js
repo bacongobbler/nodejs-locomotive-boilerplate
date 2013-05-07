@@ -10,6 +10,8 @@ var passport = require('passport');
 module.exports = function routes() {
     this.root('pages#main');
 
+    this.match('about', 'pages#about');
+
     this.match('login', 'auth#login'); 
     this.match('login',
         passport.authenticate('local', { successRedirect: '/',

@@ -8,4 +8,9 @@ PagesController.main = function() {
   this.render({ user: this.req.user, message: this.req.flash('error') });
 };
 
+PagesController.about = function() {
+  this.title = 'About';
+  this.render({ user: this.req.user, message: this.req.flash('error') });
+};
+
 module.exports = PagesController;
