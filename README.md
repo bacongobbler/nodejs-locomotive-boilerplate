@@ -1,5 +1,5 @@
-Locomotive HTML Boilerplate
-===========================
+nodejs-locomotive-boilerplate
+=============================
 
 [![Build Status](https://travis-ci.org/bacongobbler/nodejs-locomotive-boilerplate.png?branch=master)](https://travis-ci.org/bacongobbler/nodejs-locomotive-boilerplate)
 
